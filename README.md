@@ -2,10 +2,12 @@
 An API to convert pdf files into text using FastAPI
 ### Features
 1. Two endpoints - Webhook and Polling
-2. Rate limiting to prevent abuse
+2. API rate limiting and file size restrictions to prevent abuse
 3. Uses Celery for task processing
 4. API token authentication
-5. Redis server to store processed pdf files
+5. Sanitized file uploads to ensure only valid files are processed
+6. Unit tests and logging
+7. Redis server to store processed pdf files
 
 ## Installation
 
@@ -57,7 +59,7 @@ You can visit http://localhost:8000/docs after running the fastapi server to hit
 Documentation is available through Swagger UI at http://localhost:8000/docs and details what each endpoint does and the reponses for various scenarios.
 
 ## Testing
-You can test the API using pytest. Remember to set your API key as an environment variable.
+You can run unit tests for the API using pytest. Remember to export your API key environment variable.
   ```
   pytest test_main.py
   ```
