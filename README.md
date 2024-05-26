@@ -57,7 +57,7 @@ You can visit http://localhost:8000/docs after running the fastapi server to hit
 Documentation is available through Swagger UI at http://localhost:8000/docs and details what each endpoint does and the reponses for various scenarios.
 
 ## Testing
-You can test the API using pytest
+You can test the API using pytest. Remember to set your API key as an environment variable.
   ```
   pytest test_main.py
   ```
