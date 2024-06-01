@@ -1,4 +1,4 @@
-# PDFconvertAPI
+# PDFProcessorAPI
 An API to convert pdf files into text using FastAPI
 ### Features
 1. Two endpoints - Webhook and Polling
